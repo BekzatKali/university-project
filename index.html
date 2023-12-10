@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Wonders</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./index.js">
+    <link rel="icon" href="./images/icons8-travel-16.png" type="image/x-icon">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let menuBtn = document.querySelector('.burger-menu');
+            let nav = document.querySelector('.nav');
+        
+            menuBtn.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        
+            let navItems = document.querySelectorAll('.nav-item');
+        
+            navItems.forEach(function(navItem) {
+                navItem.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">Travel Wonders</a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                        <li class="nav-item"><a href="about.html" target="_blank" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="#locations" class="nav-link">Локации</a></li>
+                        <li class="nav-item"><a href="Tours.html" target="_blank" class="nav-link">Туры</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="btns-burger-holder">
+                    <a class="btn" href="login.html" target="_blank">Войти</a>
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Trusted Travel Agency</h1>
+                        <p class="hero-description">Добро пожаловать в мир невероятных путешествий! Мы - ваш надежный проводник в удивительные уголки земли. Предлагаем вам погрузиться в море впечатлений, открыв новые горизонты и культуры. Наши эксперты готовы сделать ваш отдых незабываемым, позаботившись о каждой детали. Путешествуйте с уверенностью, открывайте мир вместе с нами!</p>
+                        <div class="btn-wrappers">
+                            <a class="btn btn-hero" href="mailto:kalibekzat2003@gmail.com">Написать Нам</a>
+                            <a class="btn btn-hero" href="#">Узнать Больше</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-holder">
+                        <img class="hero-image" src="./images/hero-banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h2 class="services-title">Наши Услуги</h2>
+                <div class="services-inner">
+                    <div class="services-item">
+                        <h4>Бронирование авиабилетов</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"/></svg>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur voluptate pariatur consectetur perferendis magnam hic excepturi nostrum rem modi!</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="services-item">
+                        <h4>Круизы</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M192 32c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32V64h48c26.5 0 48 21.5 48 48V240l44.4 14.8c23.1 7.7 29.5 37.5 11.5 53.9l-101 92.6c-16.2 9.4-34.7 15.1-50.9 15.1c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-16.2 0-34.7-5.7-50.9-15.1l-101-92.6c-18-16.5-11.6-46.2 11.5-53.9L96 240V112c0-26.5 21.5-48 48-48h48V32zM160 218.7l107.8-35.9c13.1-4.4 27.3-4.4 40.5 0L416 218.7V128H160v90.7zM306.5 421.9C329 437.4 356.5 448 384 448c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 501.7 417 512 384 512c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 437.2 165.1 448 192 448c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/></svg>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur voluptate pariatur consectetur perferendis magnam hic excepturi nostrum rem modi!</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="services-item">
+                        <h4>Организация туров</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur voluptate pariatur consectetur perferendis magnam hic excepturi nostrum rem modi!</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="services-item">
+                        <h4>Бронирование отелей</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 32C0 14.3 14.3 0 32 0H480c17.7 0 32 14.3 32 32s-14.3 32-32 32V448c17.7 0 32 14.3 32 32s-14.3 32-32 32H304V464c0-26.5-21.5-48-48-48s-48 21.5-48 48v48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32V64C14.3 64 0 49.7 0 32zm96 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zM240 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H240zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zM112 192c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H112zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H240c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H368zM328 384c13.3 0 24.3-10.9 21-23.8c-10.6-41.5-48.2-72.2-93-72.2s-82.5 30.7-93 72.2c-3.3 12.8 7.8 23.8 21 23.8H328z"/></svg>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur voluptate pariatur consectetur perferendis magnam hic excepturi nostrum rem modi!</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="services-item">
+                        <h4>Изучение морей</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 16c0-7 4.5-13.2 11.2-15.3s13.9 .4 17.9 6.1l224 320c3.4 4.9 3.8 11.3 1.1 16.6s-8.2 8.6-14.2 8.6H272c-8.8 0-16-7.2-16-16V16zM212.1 96.5c7 1.9 11.9 8.2 11.9 15.5V336c0 8.8-7.2 16-16 16H80c-5.7 0-11-3-13.8-8s-2.9-11-.1-16l128-224c3.6-6.3 11-9.4 18-7.5zM5.7 404.3C2.8 394.1 10.5 384 21.1 384H554.9c10.6 0 18.3 10.1 15.4 20.3l-4 14.3C550.7 473.9 500.4 512 443 512H133C75.6 512 25.3 473.9 9.7 418.7l-4-14.3z"/></svg>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur voluptate pariatur consectetur perferendis magnam hic excepturi nostrum rem modi!</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="services-item">
+                        <h4>Зимние виды спорта</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M380.7 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM2.7 268.9c6.1-11.8 20.6-16.3 32.4-10.2L232.7 361.3l46.2-69.2-75.1-75.1c-14.6-14.6-20.4-33.9-18.4-52.1l108.8 52 39.3 39.3c16.2 16.2 18.7 41.5 6 60.6L289.8 391l128.7 66.8c13.6 7.1 29.8 7.2 43.6 .3l15.2-7.6c11.9-5.9 26.3-1.1 32.2 10.7s1.1 26.3-10.7 32.2l-15.2 7.6c-27.5 13.7-59.9 13.5-87.2-.7L12.9 301.3C1.2 295.2-3.4 280.7 2.7 268.9zM118.9 65.6L137 74.2l8.7-17.4c4-7.9 13.6-11.1 21.5-7.2s11.1 13.6 7.2 21.5l-8.5 16.9 54.7 26.2c1.5-.7 3.1-1.4 4.7-2.1l83.4-33.4c34.2-13.7 72.8 4.2 84.5 39.2l17.1 51.2 52.1 26.1c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-58.1-29c-11.4-5.7-20-15.7-24.1-27.8l-5.8-17.3-27.3 12.1-6.8 3-6.7-3.2L151.5 116.7l-9.2 18.4c-4 7.9-13.6 11.1-21.5 7.2s-11.1-13.6-7.2-21.5l9-18-17.6-8.4c-8-3.8-11.3-13.4-7.5-21.3s13.4-11.3 21.3-7.5z"/></svg>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur voluptate pariatur consectetur perferendis magnam hic excepturi nostrum rem modi!</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="locations" class="locations">
+            <div class="container">
+                <h2 class="locations-title">Локации</h2>
+                <div class="locations-cards">
+                    <a href="Tours.html#Kashmir">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l1.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>India</h2>
+                                    <h3>Kashmir</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                    <a href="Tours.html#Turkey">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l2.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>Turkey</h2>
+                                    <h3>Istanbul</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                    <a href="Tours.html#Paris">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l3.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>France</h2>
+                                    <h3>Paris</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                    <a href="Tours.html#Bali">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l4.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>Indonesia</h2>
+                                    <h3>Bali</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                    <a href="Tours.html#Dubai">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l5.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>United Arab Emirates</h2>
+                                    <h3>Dubai</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                    <a href="Tours.html#Geneva">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l6.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>Switzerland</h2>
+                                    <h3>Geneva</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                    <a href="Tours.html#PortBlair">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l7.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>Andaman & Nicobar</h2>
+                                    <h3>Port Blair</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                    <a href="Tours.html#Rome">
+                        <div class="location-card">
+                            <img class="location-card-img" src="./images/l8.jpg" alt="">
+                            <div class="wrapper-wrapper">
+                                <div class="location-card-text">
+                                    <h2>Italy</h2>
+                                    <h3>Rome</h3>
+                                </div>
+                            </div>                
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="client-reviews">
+            <div class="container">
+                <h2 class="client-reviews-title">Отзывы клиентов</h2>
+                <div class="slider">
+                    <div class="review-item">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Client 1">
+                        <p class="client-name">Antuan Lioris</p>
+                        <p class="review-text">Отличное агентство! Были в Париже, все организовано на высшем уровне.</p>
+                    </div>
+                    <div class="review-item">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Client 2">
+                        <p class="client-name">Nicole Johnson</p>
+                        <p class="review-text">Путешествие в Дубай было незабываемым благодаря Travel Wonderers.</p>
+                    </div>
+                    <div class="review-item">
+                        <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQzfHxwZW9wbGV8ZW58MHx8MHx8fDA%3D" alt="Client 2">
+                        <p class="client-name">Kim Kagawa</p>
+                        <p class="review-text">Путешествие в Дубай было незабываемым благодаря Travel Wonderers.</p>
+                    </div>
+                    <!-- Add more review items as needed -->
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                
+                <div class="footer-about-us">
+                    <h4 class="footer-subtitle">О нас</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis aliquid saepe sapiente quos nobis tempore consectetur voluptatum reprehenderit perspiciatis maiores eum, iusto amet ipsam minus, ea inventore enim voluptate natus hic cupiditate. Eaque facilis, maiores odit cumque quos dolorem.</p>
+                </div>
+                <div class="footer-navigations">
+                    <h4 class="footer-subtitle">Навигация</h4>
+                    <nav class="footer-nav">
+                        <li><a class="footer-link" href="">Главная</a></li>
+                        <li><a class="footer-link" href="">О нас</a></li>
+                        <li><a class="footer-link" href="#locations">Локации</a></li>
+                        <li><a class="footer-link" href="Tours.html">Туры</a></li>
+                        <li><a class="footer-link" href="">Контакты</a></li>
+                    </nav>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-subtitle">Наша Рассылка</h4>
+                    <div class="footer-newsletter-holder">
+                        <input class="footer-input" type="text" placeholder="Email">
+                        <a href="#" class="footer-btn">Subscribe!</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Travel Wonders. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+               
+            });
+        });
+    </script>
+</body>
+</html>

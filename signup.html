@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зарегистрироваться</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="login-form">
+        <div class="login-form-wrapper">
+             <form action="">
+                 <div class="form-item">
+                     <label for="username">Логин</label>
+                     <input id="username" type="text" placeholder="Введите логин" required>
+                 </div>
+                 <div class="form-item">
+                    <label for="date">Дата рождения</label>
+                    <input id="date" type="date" placeholder="Введите почту" required>
+                </div>
+                <div class="form-item">
+                    <label for="tel">Номер телефона</label>
+                    <input id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" placeholder="Введите номер телефона (XXX-XXX-XXXX)" required>
+                </div>
+                 <div class="form-item">
+                    <label for="email">Почта</label>
+                    <input id="email" type="email" placeholder="Введите почту" required>
+                </div>
+                 <div class="form-item">
+                     <label for="password">Придумайте пароль</label>
+                     <input id="password" type="password" placeholder="Введите пароль" required>
+                 </div>
+                 <div class="form-item">
+                    <label for="passwordCheck">Повторите пароль</label>
+                    <input id="passwordCheck" type="password" placeholder="Введите пароль" required>
+                </div>
+
+                <a href="#" class="registr-btn">Зарегистрироваться</a>
+             </form>
+        </div>
+     </div>
+</body>
+</html>
