@@ -366,6 +366,16 @@ header {
 
 .about-inner {
     padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-inner-text {
+    max-width: 500px;
+}
+
+.about-inner-img img {
+    width: 100%;
 }
 
 /* Login */

@@ -91,6 +91,10 @@
     .burger-menu {
         display: block;
     }
+    .about-inner {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 }
