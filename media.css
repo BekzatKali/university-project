@@ -138,13 +138,16 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .hero-title {
+        font-size: 26px;
+    } 
     .locations-cards {
         display: grid;
         grid-template-columns: 1fr;
     }
     .hero-image-holder {
         position: absolute;
-        top: 450px;
+        top: 415px;
         
     }
     .btn {
